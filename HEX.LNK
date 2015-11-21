@@ -1,0 +1,73 @@
+
+# HEX.EXE Linker directive file
+
+option quiet
+option map
+option statics
+option stack=65536
+option stub=wstub
+debug all
+libpath %WATCOM%\lib386
+libpath %WATCOM%\lib386\dos
+lib noemu387.lib
+lib dmx
+format os2 le
+name hex
+
+file i_cyber.obj
+file i_ibm.obj
+file i_ibm_a.obj
+file i_sound.obj
+file i_cdmus.obj
+file linear.obj
+
+file am_map.obj
+file a_action.obj
+file ct_chat.obj
+file d_net.obj
+file f_finale.obj
+file g_game.obj
+file h2_main.obj
+file info.obj
+file in_lude.obj
+file mn_menu.obj
+file m_misc.obj
+file p_acs.obj
+file p_anim.obj
+file p_ceilng.obj
+file p_doors.obj
+file p_enemy.obj
+file p_floor.obj
+file p_inter.obj
+file p_lights.obj
+file p_map.obj
+file p_maputl.obj
+file p_mobj.obj
+file p_plats.obj
+file p_pspr.obj
+file p_setup.obj
+file p_sight.obj
+file p_spec.obj
+file p_switch.obj
+file p_telept.obj
+file p_tick.obj
+file p_things.obj
+file p_user.obj
+file po_man.obj
+file r_bsp.obj
+file r_data.obj
+file r_draw.obj
+file r_main.obj
+file r_plane.obj
+file r_segs.obj
+file r_things.obj
+file sb_bar.obj
+file sc_man.obj
+file sn_sonix.obj
+file st_start.obj
+file sv_save.obj
+file sounds.obj
+file tables.obj
+file v_video.obj
+file w_wad.obj
+file z_zone.obj
